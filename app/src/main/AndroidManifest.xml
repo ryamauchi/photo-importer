@@ -5,8 +5,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"       <!-- ★追加 -->
-        android:roundIcon="@mipmap/ic_launcher"  <!-- ★追加 -->
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:label="GR3 Importer"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">

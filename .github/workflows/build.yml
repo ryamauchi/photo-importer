@@ -18,6 +18,11 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
+      - name: Setup App Icon
+        run: |
+          mkdir -p app/src/main/res/mipmap-xxxhdpi
+          mv icon.png app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
       # 環境構築不要にするため、ビルド用プログラム(gradle wrapper)をクラウド上で動的生成します
       - name: Generate Gradle Wrapper
         run: gradle wrapper --gradle-version 8.4
