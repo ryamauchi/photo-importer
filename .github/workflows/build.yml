@@ -20,7 +20,7 @@ jobs:
 
       # 環境構築不要にするため、ビルド用プログラム(gradle wrapper)をクラウド上で動的生成します
       - name: Generate Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.3
+        run: gradle wrapper --gradle-version 8.4
 
       - name: Build with Gradle
         run: ./gradlew assembleDebug
